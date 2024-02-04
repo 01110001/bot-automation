@@ -1,0 +1,41 @@
+#Import basic package
+import time
+from selenium import webdriver as wd
+import chromedriver_binary
+
+wd = wd.Chrome()
+wd.implicitly_wait(10) # wait up to 10 seconds until the page content load.
+
+#go to website
+wp.get(url)
+
+#find element to click
+button_1 = wd.find_element_by_xpath('')
+
+#click on the button
+button_1.click()
+
+#if you want to fill a form
+form_input = wd.find_element_by_xpath('')
+form_input.send_keys("text")
+
+#to select an input
+from selenium.webdriver.support.select import select
+Select(form_input).select_by_value('something')
+
+# to clear the input
+form_input.clear()
+
+# create a random wait time to not get flagged
+import random
+random_wait_time = random.randrange(20.0,15.0)
+time.sleep(random_wait_time)
+#put a sleeper betwwen each step
+
+
+
+
+
+
+
+
